@@ -1,0 +1,28 @@
+name: flutter_background_sms_example
+description: "Demonstrates how to use the flutter_background_sms plugin."
+version: 1.0.0+1
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+environment:
+  sdk: '>=3.2.6 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  flutter_background_sms:
+    path: ../
+
+  cupertino_icons: ^1.0.8
+
+dev_dependencies:
+  integration_test:
+    sdk: flutter
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
+
+

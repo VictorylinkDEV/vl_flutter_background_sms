@@ -1,0 +1,36 @@
+name: flutter_background_sms
+description: A Flutter plugin for sending SMS in background using native code for Android and for iOS launch the SMS app.
+version: 1.0.0
+author: Mahmoud Hamed <mhamed@victorylink.com>
+homepage:
+
+environment:
+  sdk: '>=3.2.6 <4.0.0'
+  flutter: '>=3.3.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  plugin_platform_interface: ^2.0.2
+  telephony:
+    git:
+      url: https://github.com/suhardik/s_telephony.git
+      ref: develop
+  url_launcher: ^6.3.0
+  permission_handler: ^11.3.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  plugin:
+    platforms:
+      android:
+        package: com.victorylink.flutter_background_sms
+        pluginClass: FlutterBackgroundSmsPlugin
+        uses-permission: android.permission.SEND_SMS
+      ios:
+        pluginClass: FlutterBackgroundSmsPlugin
+
