@@ -1,5 +1,5 @@
 # flutter_background_sms 
-## High level Flow 
+## High Level Flow 
 
 A flutter_background_sms plugin for sending SMS in the background for mobile number verification with only one click.
 
@@ -24,7 +24,7 @@ Then Plugin Based on the received parameter, will open the native SMS app contai
 then mobile mobile app should receive message sending status so that mobile app developer could call it backend ofr the needed verification
 
 
-## Technical details
+## Technical Details
 
 1.Introduction	
 The Content-Based Verification plugin simplifies integrating SMS functionality into Flutter apps, especially for those using short codes. It abstracts platform differences, allowing background SMS sending while you focus on core app features. Using short codes, this plugin helps reduce overall costs, particularly for international SMS and OTPs, minimizing waste and ensuring that the end users of your app carry the expenses.
