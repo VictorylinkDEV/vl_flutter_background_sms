@@ -3,26 +3,26 @@
 
 A flutter_background_sms plugin for sending SMS in the background for mobile number verification with only one click.
 
-Prerequisites:
+**Prerequisites**:
 
 Communicate with the Victory Link team to reserve a short number.
 Backend URL to receive the message sent from your mobile app (feel free to send a plain or encrypted body between your mobile app and your backend).
 
-Plugin input parameters from the mobile app developer:
+**Plugin input parameters from the mobile app developer:**
 
 [message] The message body that will be sent from your app through flutter_background_sms to the shortcode and then to your backend.
 [shortCode] Reserved shortcode number bought from Victory Link.
 [simSlot] Specifies the SIM slot index that will be used in the verification process.
 [callback] The function to handle the result of the client sending the SMS.
 
-In the case of Android: Based on the received parameters, the SMS will be sent automatically containing the message body received from the mobile app, using the selected SIM slot to the reserved shortcode number, and will return to the callback method specified in the input parameters.
+**In the case of Android:** Based on the received parameters, the SMS will be sent automatically containing the message body received from the mobile app, using the selected SIM slot to the reserved shortcode number, and will return to the callback method specified in the input parameters.
 
-In the case of iOS: Based on the received parameters, the plugin will open the native SMS app containing the message body received from the mobile app. The client will only need to click send, and this content will be sent from the selected SIM slot to the reserved shortcode number. The plugin will then return to the callback method specified in the input parameters.
+**In the case of iOS:** Based on the received parameters, the plugin will open the native SMS app containing the message body received from the mobile app. The client will only need to click send, and this content will be sent from the selected SIM slot to the reserved shortcode number. The plugin will then return to the callback method specified in the input parameters.
 
 Then the mobile app should receive the native SMS sending status accoringly, mobile app developer can call it's backemd to complete the verification process.
 
-Note:
-For more information and how to reserve dedicated short code number please communicate over the mail: 
+
+**For more information and how to reserve dedicated short code number please communicate over the mail:**
 
 ## Technical Details
 
